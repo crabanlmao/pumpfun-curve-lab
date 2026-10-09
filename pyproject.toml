@@ -1,0 +1,16 @@
+[project]
+name = "pumpfun-curve-lab"
+version = "0.1.0"
+description = "Exact bonding-curve math, fill and latency simulation, and tape validation for constant-product memecoin launches."
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
